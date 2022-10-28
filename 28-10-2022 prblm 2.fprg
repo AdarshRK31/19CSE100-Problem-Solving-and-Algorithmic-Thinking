@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-28 10:09:06 AM"/>
+        <attribute name="created" value="dXNlcjtMQVBUT1AtTjhPMDczOTE7MjAyMi0xMC0yODswOToyOTozNCBBTTsyNzAy"/>
+        <attribute name="edited" value="dXNlcjtMQVBUT1AtTjhPMDczOTE7MjAyMi0xMC0yODsxMDowOTowNiBBTTsyOzI4MDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the roll no&quot;" newline="True"/>
+            <input variable="a"/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the sem&quot;" newline="True"/>
+            <input variable="b"/>
+            <declare name="c" type="String" array="False" size=""/>
+            <output expression="&quot;enter the sub_code&quot;" newline="True"/>
+            <input variable="c"/>
+            <declare name="d" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the no of sub&quot;" newline="True"/>
+            <input variable="d"/>
+            <declare name="e" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the mark of chemistry&quot;" newline="True"/>
+            <input variable="e"/>
+            <declare name="f" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the mark of physics&quot;" newline="True"/>
+            <input variable="f"/>
+            <declare name="g" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the mark of maths&quot;" newline="True"/>
+            <input variable="g"/>
+            <declare name="h" type="Integer" array="False" size=""/>
+            <assign variable="h" expression="e+f+g"/>
+            <output expression="&quot;total=&quot;" newline="True"/>
+            <output expression="h" newline="True"/>
+            <declare name="i" type="Real" array="False" size=""/>
+            <assign variable="i" expression="h/d"/>
+            <output expression="&quot;average=&quot;" newline="True"/>
+            <output expression="i" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

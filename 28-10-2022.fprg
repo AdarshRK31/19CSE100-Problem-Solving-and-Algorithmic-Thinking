@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-28 09:40:09 AM"/>
+        <attribute name="created" value="dXNlcjtMQVBUT1AtTjhPMDczOTE7MjAyMi0xMC0yODswOToyOTozNCBBTTsyNzAy"/>
+        <attribute name="edited" value="dXNlcjtMQVBUT1AtTjhPMDczOTE7MjAyMi0xMC0yODswOTo0MDowOSBBTTsxOzI4MDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the roll no&quot;" newline="True"/>
+            <input variable="a"/>
+            <declare name="b" type="String" array="False" size=""/>
+            <output expression="&quot;enter the name&quot;" newline="True"/>
+            <input variable="b"/>
+            <declare name="c" type="String" array="False" size=""/>
+            <output expression="&quot;enter the address&quot;" newline="True"/>
+            <input variable="c"/>
+            <declare name="d" type="String" array="False" size=""/>
+            <output expression="&quot;enter the blood group&quot;" newline="True"/>
+            <input variable="d"/>
+            <declare name="e" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the phone number&quot;" newline="True"/>
+            <input variable="e"/>
+            <declare name="f" type="String" array="False" size=""/>
+            <output expression="&quot;enter the department&quot;" newline="True"/>
+            <input variable="f"/>
+        </body>
+    </function>
+</flowgorithm>
