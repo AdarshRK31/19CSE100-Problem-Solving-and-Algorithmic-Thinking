@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22001"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:31:01 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAwMTsyMDIyMjNNQVlDMDAzODsyMDIyLTExLTA0OzEwOjA5OjE3IEFNOzMwNTI="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAwMTsyMDIyMjNNQVlDMDAzODsyMDIyLTExLTA0OzEwOjMxOjAxIEFNOzE7MzE0OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="declared the variable a"/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the value for a&quot;" newline="True"/>
+            <input variable="a"/>
+            <comment text="declared the varible b"/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <comment text="redeving values for user"/>
+            <output expression="&quot;enter the value for b&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;values of a and b before swapping&quot;" newline="True"/>
+            <output expression="&quot;a=&quot;&amp;a" newline="True"/>
+            <output expression="&quot;b=&quot;&amp;b" newline="True"/>
+            <comment text="swapping the numbers"/>
+            <assign variable="a" expression="a+b"/>
+            <assign variable="b" expression="a-b"/>
+            <assign variable="a" expression="a-b"/>
+            <comment text="displaying the results"/>
+            <output expression="&quot;a=&quot;&amp;a" newline="True"/>
+            <output expression="&quot;b=&quot;&amp;b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

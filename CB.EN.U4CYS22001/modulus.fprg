@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22001"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:52:55 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAwMTsyMDIyMjNNQVlDMDAzODsyMDIyLTExLTA0OzEwOjM0OjMzIEFNOzMwNDg="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAwMTsyMDIyMjNNQVlDMDAzODsyMDIyLTExLTA0OzEwOjUyOjU1IEFNOzE7MzE2MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="declare variable"/>
+            <declare name="divisor, dividend, quotient, remainder" type="Integer" array="False" size=""/>
+            <comment text="getting values from user"/>
+            <output expression="&quot;Enter the divisor value&quot;" newline="True"/>
+            <input variable="divisor"/>
+            <output expression="&quot;Enter dividend value&quot;" newline="True"/>
+            <input variable="dividend"/>
+            <comment text="finding quotient and remainder"/>
+            <assign variable="quotient" expression="dividend/divisor"/>
+            <assign variable="remainder" expression="dividend-(divisor*quotient)"/>
+            <comment text="Display the result"/>
+            <output expression="&quot;For given divisor(&quot;&amp; divisor &amp;&quot;)and dividend&quot;&amp; dividend &amp;&quot;)the Quotient is &quot;&amp; quotient &amp;&quot; the Remainder is&quot;&amp; remainder" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
