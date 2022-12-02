@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22001"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:01:33 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAwMTsyMDIyMjNNQVlDMDAzODsyMDIyLTEyLTAyOzA5OjMzOjIwIEFNOzMwNTA="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAwMTsyMDIyMjNNQVlDMDAzODsyMDIyLTEyLTAyOzEwOjAxOjMzIEFNOzU7MzE1Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="programme to display multiplication table"/>
+            <comment text="declared varibales"/>
+            <declare name="firstno" type="Integer" array="False" size=""/>
+            <declare name="secondno" type="Integer" array="False" size=""/>
+            <declare name="mul" type="Integer" array="False" size=""/>
+            <assign variable="mul" expression="0"/>
+            <comment text="loop used to initialize the values"/>
+            <for variable="firstno" start="1" end="10" direction="inc" step="1">
+                <output expression="&quot;Addition table of&quot;&amp;firstno" newline="True"/>
+                <for variable="secondno" start="1" end="10" direction="inc" step="1">
+                    <assign variable="mul" expression="firstno*secondno"/>
+                    <output expression="firstno&amp;&quot;*&quot;&amp;secondno&amp;&quot;=&quot;&amp;mul" newline="True"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

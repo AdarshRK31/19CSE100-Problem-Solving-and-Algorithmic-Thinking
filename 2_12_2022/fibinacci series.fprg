@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22001"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:26:09 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAwMTsyMDIyMjNNQVlDMDAzODsyMDIyLTEyLTAyOzEwOjA0OjQ5IEFNOzMwNTE="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAwMTsyMDIyMjNNQVlDMDAzODsyMDIyLTEyLTAyOzEwOjI2OjA5IEFNOzE7MzE1OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="programme to dislay nu numbers in the fibinacci series"/>
+            <comment text="declared varibales"/>
+            <declare name="firstno, secondno, count" type="Integer" array="False" size=""/>
+            <comment text="getting the loop coount from the user"/>
+            <output expression="&quot;Enter the number of numbers you want&quot;" newline="True"/>
+            <input variable="count"/>
+            <comment text="assign the values"/>
+            <assign variable="firstno" expression="1"/>
+            <assign variable="secondno" expression="2"/>
+            <comment text="displaying the first and initial values"/>
+            <output expression="firstno" newline="True"/>
+            <while expression="count&gt;1">
+                <output expression="secondno" newline="True"/>
+                <comment text="numbers are changed according to the series"/>
+                <assign variable="secondno" expression="firstno+secondno"/>
+                <assign variable="firstno" expression="secondno-firstno"/>
+                <assign variable="count" expression="count-1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
