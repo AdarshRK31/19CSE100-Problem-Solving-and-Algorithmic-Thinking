@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 02:10:01 PM"/>
+        <attribute name="created" value="dXNlcjtMQVBUT1AtTjhPMDczOTE7MjAyMi0xMi0wOTswOToxMjo1MyBBTTsyNjk2"/>
+        <attribute name="edited" value="dXNlcjtMQVBUT1AtTjhPMDczOTE7MjAyMi0xMi0wOTswMjoxMDowMSBQTTsyOzI4MDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="start programme"/>
+            <comment text="declared variables"/>
+            <declare name="A" type="Integer" array="True" size="10"/>
+            <declare name="index" type="Integer" array="False" size=""/>
+            <comment text="loop to input values"/>
+            <for variable="index" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;Enter the value for element&quot;&amp;index+1&amp;&quot;&quot;" newline="True"/>
+                <input variable="A[index]"/>
+            </for>
+            <output expression="&quot;A=|&quot;" newline="False"/>
+            <comment text="loop to output values"/>
+            <for variable="index" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;&quot;&amp;A[index]&amp;&quot;.&quot;" newline="False"/>
+            </for>
+            <output expression="&quot;|&quot;" newline="True"/>
+            <comment text="end programme"/>
+        </body>
+    </function>
+</flowgorithm>
