@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22001"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-20 10:50:35 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjAwMTsyMDIyMjNNQVlDMDA0MDsyMDIzLTAxLTIwOzA5OjE4OjQ2IEFNOzMzMDk="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjAwMTsyMDIyMjNNQVlDMDA0MDsyMDIzLTAxLTIwOzEwOjUwOjM1IEFNOzY7MzQwOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="programme for bubble sorting"/>
+            <comment text="Declare the variables"/>
+            <declare name="n, i, j, s, p" type="Integer" array="False" size=""/>
+            <declare name="A" type="Integer" array="True" size="5"/>
+            <comment text="loop for entering the numbers"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <output expression="&quot;Enter the number&quot;&amp;i+1" newline="True"/>
+                <input variable="A[i]"/>
+            </for>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <for variable="j" start="0" end="3" direction="inc" step="1">
+                    <comment text="cheking if else condition for each number"/>
+                    <assign variable="s" expression="A[j]"/>
+                    <assign variable="p" expression="A[j+1]"/>
+                    <if expression="A[j]&gt;A[j+1]">
+                        <then>
+                            <comment text="swaping the numbers"/>
+                            <assign variable="A[j]" expression="p"/>
+                            <assign variable="A[j+1]" expression="s"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <comment text="output of the programme"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <output expression="A[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
