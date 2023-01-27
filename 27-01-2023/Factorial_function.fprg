@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Avi Nair"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-27 11:54:03 PM"/>
+        <attribute name="created" value="QXZpIE5haXI7TEFQVE9QLTRHMTBQQlJFOzIwMjMtMDEtMDY7MDE6Mjc6NTggUE07MzAyMQ=="/>
+        <attribute name="edited" value="QXZpIE5haXI7TEFQVE9QLTRHMTBQQlJFOzIwMjMtMDEtMDY7MDQ6Mjc6NDcgUE07NTszMTM0"/>
+        <attribute name="edited" value="dXNlcjtMQVBUT1AtTjhPMDczOTE7MjAyMy0wMS0yNzsxMTo1NDowMyBQTTsxOzI4MTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, fact" type="Integer" array="False" size=""/>
+            <do expression="fact==0">
+                <output expression="&quot;Enter the no to find factorial of&quot;" newline="True"/>
+                <input variable="num"/>
+                <assign variable="fact" expression="factorial(num)"/>
+                <if expression="fact==0">
+                    <then/>
+                    <else>
+                        <output expression="&quot; factorial of &quot; &amp;num&amp; &quot; is &quot; &amp;fact" newline="True"/>
+                    </else>
+                </if>
+            </do>
+        </body>
+    </function>
+    <function name="factorial" type="Integer" variable="fact">
+        <parameters>
+            <parameter name="number" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="fact, count" type="Integer" array="False" size=""/>
+            <assign variable="fact" expression="1"/>
+            <if expression="number&gt;0">
+                <then>
+                    <for variable="count" start="1" end="number" direction="inc" step="1">
+                        <assign variable="fact" expression="fact*count"/>
+                    </for>
+                </then>
+                <else>
+                    <if expression="number==0">
+                        <then/>
+                        <else>
+                            <assign variable="fact" expression="0"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

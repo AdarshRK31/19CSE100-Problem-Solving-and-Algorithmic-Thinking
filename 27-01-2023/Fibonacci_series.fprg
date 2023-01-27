@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-27 11:46:55 PM"/>
+        <attribute name="created" value="dXNlcjtMQVBUT1AtTjhPMDczOTE7MjAyMy0wMS0yNzsxMToxNDo0MyBQTTsyNzA0"/>
+        <attribute name="edited" value="dXNlcjtMQVBUT1AtTjhPMDczOTE7MjAyMy0wMS0yNzsxMTo0Njo1NSBQTTsyOzI4MjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fibo, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the number&quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;Fibonacci series is&quot;" newline="True"/>
+            <assign variable="fibo" expression="Fibonacci(n)"/>
+        </body>
+    </function>
+    <function name="Fibonacci" type="Integer" variable="A">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="A, j, k, i" type="Integer" array="False" size=""/>
+            <assign variable="k" expression="1"/>
+            <assign variable="i" expression="1"/>
+            <if expression="n=0">
+                <then/>
+                <else>
+                    <assign variable="A" expression="0"/>
+                    <assign variable="j" expression="1"/>
+                    <while expression="i&lt;=n">
+                        <assign variable="k" expression="A+j"/>
+                        <output expression="A&amp;&quot;+&quot;&amp;j&amp;&quot;=&quot;&amp;k" newline="True"/>
+                        <assign variable="A" expression="j"/>
+                        <assign variable="j" expression="k"/>
+                        <assign variable="i" expression="i+1"/>
+                    </while>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
